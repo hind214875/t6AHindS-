@@ -37,6 +37,13 @@ public class FrontendPrg extends ProgramerWeb {
     public String toString() {
         return "FrontendPrg{" + "SalarioFrontendP=" + SalarioFrontendP + '}';
     }
+    
+     //Sobrescribe el methodo programar 
+    @Override
+    public void Programar(){
+         System.out.println(" has programado tu primera aplicación ");
+         this.salario++;
+     }
 
     //hachcode y equals
     @Override

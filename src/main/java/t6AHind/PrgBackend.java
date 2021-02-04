@@ -10,19 +10,20 @@ package t6AHind;
  * @author hinda
  */
 public class PrgBackend extends ProgramerWeb {
+
     //Attributos
     private double salarioBackendPrg;
-    
+
     //constrectores
-    public PrgBackend(double SalarioPW, String nombre, String Appelido, String nif, double salario,double salarioBackendPrg ) {
+    public PrgBackend(double SalarioPW, String nombre, String Appelido, String nif, double salario, double salarioBackendPrg) {
         super(SalarioPW, nombre, Appelido, nif, salario);
-        this.salarioBackendPrg=salarioBackendPrg;
+        this.salarioBackendPrg = salarioBackendPrg;
     }
 
     public PrgBackend() {
         super();
     }
-    
+
     //getters y setters
     public double getSalarioBackendPrg() {
         return salarioBackendPrg;
@@ -31,15 +32,21 @@ public class PrgBackend extends ProgramerWeb {
     public void setSalarioBackendPrg(double salarioBackendPrg) {
         this.salarioBackendPrg = salarioBackendPrg;
     }
-    
+
     //toString
     @Override
     public String toString() {
         return "PrgBackend{" + "salarioBackendPrg=" + salarioBackendPrg + '}';
     }
-    
-    //hachcode y equals
 
+    //Sobrescribe el methodo programar 
+    @Override
+    public void Programar() {
+        System.out.println(" has programado tu primera aplicación ");
+        this.salario++;
+    }
+
+    //hachcode y equals
     @Override
     public int hashCode() {
         int hash = 3;
@@ -64,7 +71,5 @@ public class PrgBackend extends ProgramerWeb {
         }
         return true;
     }
-    
-    
-    
+
 }

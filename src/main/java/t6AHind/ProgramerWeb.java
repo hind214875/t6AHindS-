@@ -30,6 +30,13 @@ public class ProgramerWeb extends Programadore {
         this.SalarioPW = SalarioPW;
     }
     
+    //Sobrescribe el methodo programar 
+    @Override
+    public void Programar(){
+         System.out.println(" has programado tu primera aplicación ");
+         this.salario++;
+     }
+    
     //ToString
     @Override
     public String toString() {
