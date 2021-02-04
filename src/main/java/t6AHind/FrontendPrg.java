@@ -44,7 +44,8 @@ public class FrontendPrg extends ProgramerWeb {
          System.out.println(" has programado tu primera aplicación ");
          this.salario++;
      }
-
+    
+    
     //hachcode y equals
     @Override
     public int hashCode() {

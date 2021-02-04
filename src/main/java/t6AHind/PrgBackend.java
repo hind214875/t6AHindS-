@@ -46,6 +46,12 @@ public class PrgBackend extends ProgramerWeb {
         this.salario++;
     }
 
+    //methodo Pgoramar Backend 
+    public void PgoramarBackend() {
+        System.out.println(" has programado el backend  ");
+        this.salarioBackendPrg++;
+    }
+
     //hachcode y equals
     @Override
     public int hashCode() {
