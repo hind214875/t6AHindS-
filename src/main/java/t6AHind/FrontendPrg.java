@@ -45,7 +45,11 @@ public class FrontendPrg extends ProgramerWeb {
          this.salario++;
      }
     
-    
+    //Programar Frontend
+    public void PgoramarFrontend() {
+        System.out.println(" has programado el backend  ");
+        this.SalarioFrontendP++;
+    }
     //hachcode y equals
     @Override
     public int hashCode() {
