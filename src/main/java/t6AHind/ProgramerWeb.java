@@ -37,6 +37,12 @@ public class ProgramerWeb extends Programadore {
          this.salario++;
      }
     
+    //methodo Programar webSite
+    public void ProgramarWeb(){
+        System.out.println(" has programado tu primera pagina web ");
+        this.SalarioPW++;
+    }
+    
     //ToString
     @Override
     public String toString() {
