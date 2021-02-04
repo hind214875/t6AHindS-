@@ -12,7 +12,6 @@ import java.util.Objects;
  * @author hinda
  */
 public class Programadore {
-
     //attributos
     String nombre;
     String Appelido;
@@ -35,6 +34,12 @@ public class Programadore {
         this.salario = 20000;
 
     }
+    
+    //methodo Programar
+     public void Programar(){
+         System.out.println(" has programado tu primera aplicación ");
+         this.salario++;
+     }
     
     //getters y setters
 
@@ -99,7 +104,7 @@ public class Programadore {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Programadores other = (Programadores) obj;
+        final Programadore other = (Programadore) obj;
         if (Double.doubleToLongBits(this.salario) != Double.doubleToLongBits(other.salario)) {
             return false;
         }
