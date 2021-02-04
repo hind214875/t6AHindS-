@@ -43,6 +43,12 @@ public class ProgramerWeb extends Programadore {
         this.SalarioPW++;
     }
     
+    //methodo sobrescribir en C y D
+    public void TestarPaginaWeb(){
+        System.out.println(" el packendend el frontend listo y fonciona bien ");
+    }
+    
+    
     //ToString
     @Override
     public String toString() {

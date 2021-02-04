@@ -51,7 +51,13 @@ public class PrgBackend extends ProgramerWeb {
         System.out.println(" has programado el backend  ");
         this.salarioBackendPrg++;
     }
-
+ 
+    //methodo sobrescribir en C y D
+    @Override
+    public void TestarPaginaWeb(){
+        System.out.println(" el packendend el frontend listo y fonciona bien ");
+    }
+    
     //hachcode y equals
     @Override
     public int hashCode() {
